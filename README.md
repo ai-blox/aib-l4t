@@ -1,2 +1,26 @@
 # aib-l4t
 AI-BLOX fork of the NVIDIA L4T repos
+
+
+## Repos overview
+
+| directory                                      | nvidia repo                                                                                              | ai-blox repo                                                                                           |
+|------------------------------------------------|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| kernel/kernel-4.9                              | [kernel-4.9](git://nv-tegra.nvidia.com/linux-4.9.git)                                                    | [kernel-4.9](https://github.com/ai-blox/l4t-kernel-kernel-4.9)                                         |
+| kernel/nvgpu                                   | [nvgpu](git://nv-tegra.nvidia.com/linux-nvgpu.git)                                                       | [nvgpu](https://github.com/ai-blox/l4t-kernel-nvgpu)                                                   |
+| kernel/nvidia                                  | [nvidia](git://nv-tegra.nvidia.com/linux-nvidia.git)                                                     | [nvidia](https://github.com/ai-blox/l4t-kernel-nvidia)                                                 |
+| hardware/nvidia/soc/t18x                       | [soc/t18x](git://nv-tegra.nvidia.com/device/hardware/nvidia/soc/t18x.git)                                | [soc/t18x](https://github.com/ai-blox/l4t-hardware-nvidia-soc-t18x)                                    |
+| hardware/nvidia/platform/tegra/common          | [tegra/common](git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/tegra/common.git)               | [tegra/common](https://github.com/ai-blox/l4t-hardware-nvidia-platform-tegra-common)                   | 
+| hardware/nvidia/platform/t18x/common           | [t18x/common](git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t18x/common.git)                 | [t18x/common](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t18x-common)                     |
+| hardware/nvidia/platform/t18x/quill            | [t18x/quill](git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t18x/quill.git)                   | [t18x/quill](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t18x-quill)                       |
+| hardware/nvidia/soc/t210                       | [soc/t210](git://nv-tegra.nvidia.com/device/hardware/nvidia/soc/t210.git)                                | [soc/t210](https://github.com/ai-blox/l4t-hardware-nvidia-soc-t210)                                    |
+| hardware/nvidia/platform/t210/common           | [t210/common](git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t210/common.git)                 | [t210/common](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t210-common)                     |
+| hardware/nvidia/platform/t210/jetson           | [t210/jetson](git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t210/jetson.git)                 | [t210/jetson](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t210-jetson)                     |
+| hardware/nvidia/platform/t210/porg             | [t210/porg](git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t210/porg.git)                     | [t210/porg](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t210-porg)                         |
+| hardware/nvidia/soc/t19x                       | [soc/t19x](git://nv-tegra.nvidia.com/device/hardware/nvidia/soc/t19x.git)                                | [soc/t19x](https://github.com/ai-blox/l4t-hardware-nvidia-soc-t19x)                                    |
+| hardware/nvidia/platform/t19x/common           | [t19x/common](git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t19x/common.git)                 | [t19x/common](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t19x-common)                     |
+| hardware/nvidia/platform/t19x/galen/kernel-dts | [t19x/galen/kernel-dts](git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t19x/stardust-dts.git) | [t19x/galen/kernel-dts](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t19x-galen-kernel-dts) |
+| hardware/nvidia/platform/t19x/jakku/kernel-dts | [t19x/jakku/kernel-dts](git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t19x/jakku-dts.git)    | [t19x/jakku/kernel-dts](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t19x-jakku-kernel-dts) |
+| hardware/nvidia/soc/tegra                      | [soc/tegra](git://nv-tegra.nvidia.com/device/hardware/nvidia/soc/tegra.git)                              | [soc/tegra](https://github.com/ai-blox/l4t-hardware-nvidia-soc-tegra)                                  |
+| u-boot                                         | [u-boot](git://nv-tegra.nvidia.com/device/hardware/nvidia/soc/tegra.git)                                 | [u-boot](https://github.com/ai-blox/l4t-u-boot)                                                        |
+ 
