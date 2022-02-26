@@ -1,5 +1,21 @@
 # aib-l4t repo
-AI-BLOX fork of the NVIDIA L4T repos
+
+This is the AI-BLOX fork of the NVIDIA L4T repos and contains all the modifications necessary to run L4T on the AI-BLOX hardware.
+
+
+## How to clone?
+
+You can clone the repo with following commands.
+
+````shell
+$ git clone git@github.com:ai-blox/aib-l4t.git
+$ cd aib-l4t
+$ git remote init
+$ git remote update
+
+````
+
+
 
 
 
