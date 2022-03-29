@@ -1,6 +1,6 @@
 [submodule "kernel/nvgpu"]
 	path = kernel/nvgpu
-	url = git@github.com:ai-blox/l4t-kernel-nvgpu.git
+	url = https://github.com/ai-blox/l4t-kernel-nvgpu.git
 [submodule "kernel/kernel-4.9"]
 	path = kernel/kernel-4.9
 	url = https://github.com/ai-blox/l4t-kernel-kernel-4.9
