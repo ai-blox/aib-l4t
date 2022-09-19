@@ -10,8 +10,8 @@ You can clone the repo with following commands.
 ````shell
 $ git clone git@github.com:ai-blox/aib-l4t.git
 $ cd aib-l4t
-$ git remote init
-$ git remote update
+$ git submodule init
+$ git submodule update
 
 ````
 
