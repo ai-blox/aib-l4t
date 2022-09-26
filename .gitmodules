@@ -49,3 +49,6 @@
 [submodule "u-boot"]
 	path = u-boot
 	url = https://github.com/ai-blox/l4t-u-boot
+[submodule "hardware/nvidia/platform/t18x/l4t-hardware-nvidia-platform-t18x-lanai"]
+	path = hardware/nvidia/platform/t18x/l4t-hardware-nvidia-platform-t18x-lanai
+	url = https://github.com/ai-blox/l4t-hardware-nvidia-platform-t18x-lanai.git
