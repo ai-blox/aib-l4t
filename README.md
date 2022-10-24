@@ -15,15 +15,29 @@ $ git submodule update
 
 ````
 
-## Checkout 
+## JetPack versions
+
+Depending of the JetPack version, you need to checkout the correct branch. 
+The table below shows the JetPack version versus the L4T branch
+
+| JetPack version | Branch          |
+|-----------------|-----------------|
+| JetPack 4.6.1   | aib-l4t-r32.7.1 |
+| JetPack 4.6     | aib-l4t-r32.6.1 |
+| JetPack 4.5.1   | aib-l4t-r32.5.1 |
+| JetPack 4.5     | aib-l4t-r32.5   |
+| JetPack 4.4.1   | aib-l4t-r32.4.4 |
+| JetPack 4.4     | aib-l4t-r32.4.3 |
+| JetPack 4.4 DP  | aib-l4t-r32.4.2 |
+
+### Checkout the right version
+
+If you want to build L4T for examplefor JetPack version 4.4, you need to checkout aib-l4t-r32.4.3.
 
 ````shell
-$ AIB_VERSION=aib-l4t-r32.4.3
-$ git remote foreach 'git checkout $AIB_VERSION'
+$ git remote foreach 'git checkout aib-l4t-r32.4.3'
 
 ````
-
-
 
 
 ## Repos overview
