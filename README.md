@@ -10,8 +10,8 @@ You can clone the repo with following commands.
 ````shell
 $ git clone git@github.com:ai-blox/aib-l4t.git
 $ cd aib-l4t
-$ git remote init
-$ git remote update
+$ git submodule init
+$ git submodule update
 
 ````
 
@@ -42,7 +42,7 @@ $ git remote foreach 'git checkout $AIB_VERSION'
 | hardware/nvidia/platform/t210/jetson           | [t210/jetson](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t210-jetson)                        | git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t210/jetson.git                             |
 | hardware/nvidia/platform/t210/porg             | [t210/porg](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t210-porg)                            | git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t210/porg.git                               |
 | hardware/nvidia/soc/t19x                       | [soc/t19x](https://github.com/ai-blox/l4t-hardware-nvidia-soc-t19x)                                       | git://nv-tegra.nvidia.com/device/hardware/nvidia/soc/t19x.git                                         |
-| hardware/nvidia/platform/t19x/common           | [t19x/common](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t19x-common)                        | git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t19x/common.git)                            |
+| hardware/nvidia/platform/t19x/common           | [t19x/common](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t19x-common)                        | git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t19x/common.git                             |
 | hardware/nvidia/platform/t19x/galen/kernel-dts | [t19x/galen/kernel-dts](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t19x-galen-kernel-dts)    | git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t19x/stardust-dts.git                       |
 | hardware/nvidia/platform/t19x/jakku/kernel-dts | [t19x/jakku/kernel-dts](https://github.com/ai-blox/l4t-hardware-nvidia-platform-t19x-jakku-kernel-dts)    | git://nv-tegra.nvidia.com/device/hardware/nvidia/platform/t19x/jakku-dts.git                          |
 | hardware/nvidia/soc/tegra                      | [soc/tegra](https://github.com/ai-blox/l4t-hardware-nvidia-soc-tegra)                                     | git://nv-tegra.nvidia.com/device/hardware/nvidia/soc/tegra.git                                        |
