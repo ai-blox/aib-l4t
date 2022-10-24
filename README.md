@@ -15,6 +15,13 @@ $ git remote update
 
 ````
 
+## Checkout 
+
+````shell
+$ AIB_VERSION=aib-l4t-r32.4.3
+$ git remote foreach 'git checkout $AIB_VERSION'
+
+````
 
 
 
