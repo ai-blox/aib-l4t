@@ -22,6 +22,7 @@ The table below shows the JetPack version versus the L4T branch
 
 | JetPack version | Branch          |
 |-----------------|-----------------|
+| JetPack 4.6.3   | aib-l4t-r32.7.3 |
 | JetPack 4.6.1   | aib-l4t-r32.7.1 |
 | JetPack 4.6     | aib-l4t-r32.6.1 |
 | JetPack 4.5.1   | aib-l4t-r32.5.1 |
