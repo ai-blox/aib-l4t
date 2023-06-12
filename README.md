@@ -8,7 +8,7 @@ This is the AI-BLOX fork of the NVIDIA L4T repos and contains all the modificati
 You can clone the repo with following commands.
 
 ````shell
-$ git clone git@github.com:ai-blox/aib-l4t.git
+$ git clone https://github.com/ai-blox/aib-l4t.git
 $ cd aib-l4t
 $ git submodule init
 $ git submodule update
