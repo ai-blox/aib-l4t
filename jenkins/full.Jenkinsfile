@@ -17,7 +17,7 @@ pipeline {
 	stages {
         stage('Build Kernel') {
             steps {
-                sh 'git submodule foreach "git checkout aib-l4t-r32.7.1"'
+                sh "git submodule foreach 'git checkout aib-l4t-r32.7.1'"
                 sh 'cd kernel/kernel-4.9'
                 sh 'export TEGRA_KERNEL_OUT=~/nvidia/ai-blox_sdk/aib-l4t-r32.7.1'
                 sh 'export LOCALVERSION=-tegra'
