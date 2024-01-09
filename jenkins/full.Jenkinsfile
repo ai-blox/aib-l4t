@@ -3,6 +3,7 @@ node('jenkins-ec2-plugin-slave') {
 }
 
 pipeline {
+/*
 	agent {
         dockerfile {
             dir 'jenkins'
@@ -11,12 +12,14 @@ pipeline {
                                     --build-arg TEGRA_KERNEL_OUT=ai-blox_sdk/aib-l4t-r32.7.1 \
                                     --build-arg LOCALVERSION=-tegra"""
         }
-	}
+	} */
 	stages {
         stage('Build Kernel') {
             steps {
                 sh 'git submodule foreach "git checkout aib-l4t-r32.7.1"'
                 sh 'cd kernel/kernel-4.9'
+                sh 'export TEGRA_KERNEL_OUT=~/nvidia/ai-blox_sdk/aib-l4t-r32.7.1'
+                sh 'export LOCALVERSION=-tegra'
                 sh 'mkdir -p $TEGRA_KERNEL_OUT'
                 sh 'make O=$TEGRA_KERNEL_OUT tegra_defconfig'
 
