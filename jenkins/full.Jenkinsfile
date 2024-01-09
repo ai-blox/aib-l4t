@@ -17,19 +17,22 @@ pipeline {
 	stages {
         stage('Build Kernel') {
             steps {
-                sh "git submodule foreach 'git checkout aib-l4t-r32.7.1'"
-                sh 'cd kernel/kernel-4.9'
-                sh 'export TEGRA_KERNEL_OUT=~/nvidia/ai-blox_sdk/aib-l4t-r32.7.1'
-                sh 'export LOCALVERSION=-tegra'
-                sh 'mkdir -p $TEGRA_KERNEL_OUT'
-                sh 'make O=$TEGRA_KERNEL_OUT tegra_defconfig'
+                sh '''#!/bin/bash -ex
 
-                //#  add the EDT FocalTech FT5x06 I2C Touchscreen support driver through menuconfg
-                //# TOUCHSCREEN_EDT_FT5X06
-                //$ make ARCH=arm64 O=$TEGRA_KERNEL_OUT menuconfig
+                    git submodule foreach 'git checkout aib-l4t-r32.7.1'
+                    cd kernel/kernel-4.9
+                    export TEGRA_KERNEL_OUT=~/nvidia/ai-blox_sdk/aib-l4t-r32.7.1
+                    export LOCALVERSION=-tegra
+                    mkdir -p $TEGRA_KERNEL_OUT
+                    make O=$TEGRA_KERNEL_OUT tegra_defconfig
 
-                //# build everything
-                sh 'make O=$TEGRA_KERNEL_OUT -j6'
+	                //#  add the EDT FocalTech FT5x06 I2C Touchscreen support driver through menuconfg
+	                //# TOUCHSCREEN_EDT_FT5X06
+	                //$ make ARCH=arm64 O=$TEGRA_KERNEL_OUT menuconfig
+
+	                //# build everything
+	                sh 'make O=$TEGRA_KERNEL_OUT -j6'
+                '''
             }
         }
 	}
