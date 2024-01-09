@@ -3,6 +3,7 @@ node('jenkins-ec2-plugin-slave') {
 }
 
 pipeline {
+	agent any
 /*
 	agent {
         dockerfile {
